@@ -1,0 +1,129 @@
+body {
+  background-color: #173F3F;
+}
+
+.header {
+  display: block;
+  place-items: center;  
+  text-align: center; 
+  max-height: 25vh;
+  margin: auto;
+}
+
+h1.title {
+  font-family: 'Satisfy', cursive;
+  font-weight: 800;
+  font-size: 8.5vw;
+}
+
+.title-word {
+  animation-name: color-animation; 
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.title-word-1 {
+  --color-1: #54A88A;
+  --color-2: #AACE71;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #FFFE91;
+  --color-2: #ACCFCB;
+  --color-3: #EFE8D3;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #D31E38;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.container {
+  margin: 0 auto;
+  padding: 500px;
+  height: 350px;
+  max-width: 350px;
+  border-radius: 50%; 
+}
+
+.snowfall{
+  background: url(https://i.imgur.com/T0mBFg2.png);
+  background-size: 350px 200px;
+  background-repeat: repeat;
+  height: 350px;
+  width: 350px;
+  position: relative;
+  bottom: 493px;
+  border-radius: 50%;
+  animation: snowfall 5s linear forwards infinite; 
+}
+@keyframes snowfall{
+  0%{
+    background-position: 0 0;
+  }
+  20%{
+    background-position: 20px 20px;
+  }
+  40%{
+    background-position: 40px 40px;
+  }
+  60%{
+    background-position: 60px 60px;
+  }
+  80%{
+    background-position: 80px 80px;
+  }
+  100%{
+    background-position: 100px 100px;
+  }
+}
+.cover{
+  background-color: rgba(255,255,255,0.2);
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 842px;
+}
+.bottom{
+  background-color: #c1272e;
+  height: 70px; 
+  width: 260px;
+  position: relative;
+  bottom: 880px;
+  left: 47px;
+}
+.bt1,.bt2{
+  background-color: #d33c3c;
+  height: 20px;
+  width: 280px;
+  position: relative;
+  right: 10px;
+  border-radius: 10px; 
+}
+.bt1{
+  bottom: 12px;
+}
+.bt2{
+  top: 40px;
+}
+.house img{
+  position: relative;
+  bottom: 290px;
+  left: 44px;
+  z-index: -1;
+}
+
+
