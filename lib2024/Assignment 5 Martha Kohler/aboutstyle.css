@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #d1adcc;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.875rem;
+}
+
+.menuToggle {
+  display: none;
+}
+
+header {
+  background-color: #c2d2bd;
+  box-shadow:rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+a {
+  text-decoration: none;
+  color: #5f2c3e;
+ }
+
+.header .logo {
+  font-size: 1.5rem;
+}
+.header .logo span {
+  color: #c65032;
+}
+
+.header .navigation {
+  list-style: none;
+  display: flex;
+}
+
+.header .navigation li {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+}
+
+.header .navigation li.active {
+  border-bottom: 2px solid #c65032;
+}
+
+.header .navigation li:hover {
+  border-bottom: 2px solid #c65032;
+}
+
+@media (max-width:800px) {
+  .header .navigation {
+    display: none;s
+  }
+
+  .header .menuToggle {
+    display: flex;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+   .container.main {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .main .col {
+      width: 100%;
+   }      
+
+  .header .navigation.active {
+    display: flex;
+    position: fixed;
+    top: 4rem;
+    background: #f6e9d7;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 1.25rem;
+    animation: slide 0.2s ease;
+  }
+
+  @keyframes slide {
+    0% {
+     left: -300px;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  .header .navigation li {
+    margin-left: 0rem;
+    padding: 1rem 0;
+  }
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.container-about {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.content-section {
+  float: left;
+  width: 55%;
+}
+
+.image-section {
+  float: right;
+  width: 40%;
+}
+
+.image-section img{
+  width: 100%;
+  height: auto;
+} 
+ 
+.content-section .title{
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.content-section .content h3{
+  margin-top: 20px;
+  color: #c65032;
+  font-size: 20px;
+}
+
+.content-section .content p{
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.content-section .content .button{
+  margin-top: 30px;
+}  
+
+.content-section .content .button a{
+  background-color: #c65032;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #5f2c3e;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover{
+  background-color: #f6e9d7;
+  color: #5f2c3e;
+}
+
+.content-section .social{
+  margin: 40px 40px;
+}
+
+.content-section .social .fa-brands-fa-facebook-f {
+  font-size: 40px;
+  padding: 0px 10px;
+}
+
+.content-section .social i:hover{
+  color: #c2d2bd;file:///C:/Users/mkohl/OneDrive/Documents/Martha%20Kohler%20-%20Copy/Algonquin%202022/Semester%202%20W2023/LIB2024%20Internet%20Applications/GitHub/kohl0028.github.io/lib2024/Assignment%205%20Martha%20Kohler/about.html#
+}
+
+@media screen and (max-width: 768px){
+  .container-about {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .content-section {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image-section {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .content-section .title{
+    text-align: center;
+    font-size: 19px;
+  }
+  .content-section .content .button{
+    text-align: center;
+  } 
+  .content-section .content .button a{
+    padding: 9px 30px;
+  }
+  .conten-section .social{
+    text-align: center;
+  }
+}
+
+/* footer  */
+
+.footer {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #f6e9d7;
+  box-shadow: 0px 0 5px rgba(0,0,0,0.1);
+}
+
+.container.footer {
+  text-align: center;
+  padding: 1rem 0.0875rem;
+}
+
+
+
+
+
+
+
+
+
+
+  
+

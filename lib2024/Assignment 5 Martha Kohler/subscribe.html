@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-devidce-width">
+		<title>Subscribe | Ontario Wildflowers</title>
+		<link rel="stylesheet" href="homestyle.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+		<link rel="shortcut icon" type="image/svg" href="images/favicon.svg">
+	</head>
+	<body>
+		<!-- navigation starts -->
+		<header>
+			<div class="container-header">
+				<a href="home.html" class="logo">Ontario Wildflowers<span>.</span></a>
+				<div class="menuToggle">	
+				<i class="fa-solid fa-bars"></i>	
+				</div>	
+			</div>
+			<nav>
+				<ul class="navigation">
+					<li<a href="home.html"></a>Home</li>
+					<li><a href="resources.html"></a>Resources</li>
+					<li><a href="about.html"></a>About</li>
+					<li><a href="contact.html"></a>Contact</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!--navigation ends -->
+		
+		<!--content starts -->
+		
+		<div class=title >
+			<h1>Subscribe</h1>
+		</div>
+		<div class="form container">
+			<form>
+				<div>
+					<label for="name">
+						Name:
+						<input type="text" name="name" id="name" required>
+					</label>
+				</div>
+				<div>
+					<label for="email">
+						Email:
+						<input type="email" name="email" id="email" required>
+					</label>
+				</div>
+			</form>	
+			<div>	
+				<button type="submit" class="btn" onclick="openPopup()">Submit</button>
+				<div class="popup" id="popup">
+					<img src="images/tick.png">
+					<h2>Thank You!</h2>
+					<p>Your details have been sucessfully submitted. Thanks!</p>
+					<button type="button" onclick="closePopup()">OK</button>
+				</div>
+			</div>
+		</div>
+		<!--content ends -->
+		
+		<!-- footer starts -->
+		<footer>
+			<div class="container footer">
+				<p>Martha Kohler ©2023</p>
+			</div>
+		</footer>
+	
+		<!-- footer ends -->
+	<script> 
+		let popup = document.getElementbyID ("popup");
+		
+		function openPopup(){
+		popup.classList.add("open-popup");
+		}
+		function closePopup(){
+		popup.classList.remove("open-popup");
+		}
+	</script>
+	
+	</body>
+</html>

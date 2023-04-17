@@ -1,6 +1,6 @@
 Links for Assignment 5
 
-video tutorial: https://www.youtube.com/watch?v=tl5GQQAg1u8&ab_channel=FutureCoders
+homepage video tutorial: https://www.youtube.com/watch?v=tl5GQQAg1u8&ab_channel=FutureCoders
 
 logo img: 
 	Image by <a href="https://pixabay.com/users/psddude-785991/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6849474">psddude</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6849474">Pixabay</a>
@@ -19,3 +19,11 @@ Inspo for color scheme
 	cream #f6e9d7
 
 Lorem ipsum generator: https://www.lipsum.com/feed/html
+
+Fontawesome icon library: Classic family
+https://fontawesome.com/search?p=2&o=r&m=free&s=solid&f=classic
+
+Responsive About Us page tutorial: https://www.youtube.com/watch?v=HMqB4aASr0E&ab_channel=LearnWeb
+
+purple checkmark asset: https://www.clipartmax.com/download/m2i8b1b1H7A0b1K9_tick-purple-400px-check-mark-in-circle-icon/ 
+
