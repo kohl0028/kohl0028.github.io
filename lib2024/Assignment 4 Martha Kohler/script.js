@@ -1,3 +1,4 @@
+//attempted number validation function defining entry must be numeric and if not to display Invalid Entry // 
 function validate(){
   var num=document.myform.num.value;
   if (isNaN(num)){
@@ -7,10 +8,12 @@ function validate(){
     return true;
     }
   }
+
+// defining the click to action convert or clear field // 
 document.getElementById('convert').onclick = tempConvert;
 document.getElementById('reset').onclick = clearForm;
 
-
+//conversion function //
 function tempConvert() {
     
     var fahrenheit = document.getElementById("fahrenheit").value;
@@ -23,12 +26,12 @@ function tempConvert() {
     }
   
 
-
+// limiting the decimal value displayed // 
 document.getElementById('fahrenheit').value = parseFloat(fahrenheit).toFixed(1);
 document.getElementById('celsius').value = parseFloat(celsius).toFixed(1);
 }
 
-
+//reset form function //
 function clearForm() {
     document.getElementById('fahrenheit').value = '';
     document.getElementById('celsius').value = '';
