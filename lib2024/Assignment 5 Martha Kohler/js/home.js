@@ -1,7 +1,9 @@
-const menuToggle = document.getElementsByClassName('.menuToggle')[0];
-const navigation = document.getElementsByClassName('.navigation')[0];
+//if small screen, menu items convert to hamburger menu and items open on click//
 
-menuToggle.addEventListener('click', function() => {
+const menuToggle = document.querySelector('.menuToggle');
+const navigation = document.querySelector('.navigation');
+
+menuToggle.addEventListener('click', function(){;
   menuToggle.classList.toggle('active');
   navigation.classList.toggle('active');
 
@@ -10,4 +12,4 @@ menuToggle.addEventListener('click', function() => {
   }  else {
     menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
   }
-}
+})
