@@ -1,6 +1,6 @@
 //attempted number validation function defining entry must be numeric and if not to display Invalid Entry // 
 function validate(){
-  var num=document.myform.num.value;
+  var num=document.form.num.value;
   if (isNaN(num)){
     document.getElementById("numloc").innerHTML="Invalid Entry";
     return false;
