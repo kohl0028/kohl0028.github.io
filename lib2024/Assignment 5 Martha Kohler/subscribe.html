@@ -4,28 +4,27 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-devidce-width">
 		<title>Subscribe | Ontario Wildflowers</title>
-		<link rel="stylesheet" href="homestyle.css">
+		<link rel="stylesheet" href="/css/homestyle.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
 		<link rel="shortcut icon" type="image/svg" href="images/favicon.svg">
 	</head>
 	<body>
 		<!-- navigation starts -->
 		<header>
-			<div class="container-header">
+			<div class="container header">
 				<a href="home.html" class="logo">Ontario Wildflowers<span>.</span></a>
 				<div class="menuToggle">	
-				<i class="fa-solid fa-bars"></i>	
+					<i class="fa-solid fa-bars"></i>	
 				</div>	
-			</div>
-			<nav>
 				<ul class="navigation">
-					<li<a href="home.html"></a>Home</li>
-					<li><a href="resources.html"></a>Resources</li>
+					<a href="home.html"></a><li>Home</li>
+					<a href="resources.html"></a><li>Resources</li>
 					<li><a href="about.html"></a>About</li>
 					<li><a href="contact.html"></a>Contact</li>
 				</ul>
-			</nav>
+			</div>
 		</header>
+		
 		
 		<!--navigation ends -->
 		
@@ -34,12 +33,11 @@
 		<div class=title >
 			<h1>Subscribe</h1>
 		</div>
-		<div class="form container">
-			<form>
+		<div class="subscribe">
+			<form action="php/process_form.php" method="post">
 				<div>
 					<label for="name">
-						Name:
-						<input type="text" name="name" id="name" required>
+						Name:<input type="text" name="name" id="name" required>
 					</label>
 				</div>
 				<div>
@@ -70,14 +68,7 @@
 	
 		<!-- footer ends -->
 	<script> 
-		let popup = document.getElementbyID ("popup");
-		
-		function openPopup(){
-		popup.classList.add("open-popup");
-		}
-		function closePopup(){
-		popup.classList.remove("open-popup");
-		}
+	
 	</script>
 	
 	</body>

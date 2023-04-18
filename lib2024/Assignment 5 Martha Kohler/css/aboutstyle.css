@@ -142,6 +142,7 @@ a {
 .image-section img{
   width: 100%;
   height: auto;
+  border-radius: 50%;
 } 
  
 .content-section .title{
@@ -182,11 +183,13 @@ a {
 
 .content-section .social{
   margin: 40px 40px;
+  height: 50px;
+  width: 100%;
 }
 
-.content-section .social .fa-brands-fa-facebook-f {
-  font-size: 40px;
-  padding: 0px 10px;
+.content-section .social i {
+  padding: 15px;
+}
 }
 
 .content-section .social i:hover{
@@ -217,6 +220,9 @@ a {
     height: auto;
     display: block;
     margin: auto;
+    border: none;
+    border-radius: 10px;
+
   }
   .content-section .title{
     text-align: center;
@@ -228,7 +234,7 @@ a {
   .content-section .content .button a{
     padding: 9px 30px;
   }
-  .conten-section .social{
+  .section .content-section .social{
     text-align: center;
   }
 }
